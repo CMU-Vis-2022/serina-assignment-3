@@ -46,7 +46,7 @@ FROM pittsburgh-air-quality.parquet`);
 
 // Create a select element for the locations.
 const select = d3.select(app).append("select");
-for (const City of Cities) {
+for (const City of City) {
   select.append("option").text(City.City);
 }
 
